@@ -17,20 +17,24 @@ class InsertarProductos extends Seeder
     {
         DB::table('productos')->insert(array(
             [
-                'name' => 'caffe',
-                'coduni' => 1589,
+                'name' => 'caffe',                
                 'image' => 'https://www.ar-racking.com/gestor/recursos/uploads/imagenes/Delegaciones/CHILE/rack-metalico-bodega-santiago.jpg',
+                'coduni' => 15892568,
                 'categoria' => 'perecible',
                 'desc' => 'sirve calentarse',
+                'cantidad' => 15,
+                'precio' => 1500,
                 'sucursal_id' => 1
             ],
             [
-                'name' => 'caffe',
-                'coduni' => 1589,
-                'image' => 'https://www.peru-retail.com/wp-content/uploads/LIDER-G_2.jpg',
+                'name' => 'caffe',                
+                'image' => 'https://www.ar-racking.com/gestor/recursos/uploads/imagenes/Delegaciones/CHILE/rack-metalico-bodega-santiago.jpg',
+                'coduni' => 15892568,
                 'categoria' => 'perecible',
                 'desc' => 'sirve calentarse',
-                'sucursal_id' => 2
+                'cantidad' => 15,
+                'precio' => 1500,
+                'sucursal_id' => 1
             ]
         ));
     }

@@ -29,7 +29,7 @@
                     <h5 class="card-title"> <b>Nombre:</b> {{ $producto->name }}</h5>
                     <h5 class="card-title"> <b>Codigo Unico:</b> {{ $producto->coduni }}</h5>
                     <h5 class="card-title"> <b>Categoria:</b> {{ $producto->categoria }}</h5>
-                    <h5 class="card-title"> <b>Descripcion:</b> {{ Str::limit($producto->desc,15) }}</h5>
+                    <h5 class="card-title"> <b>Descripcion:</b> {{ Str::limit($producto->desc,25) }}</h5>
                     <h5 class="card-title"> <b>Cantidad de productos:</b> {{ $producto->cantidad }}</h5>
                     <h5 class="card-title"> <b>Precio:</b> {{ $producto->precio }}</h5>
                     <h5 class="card-title"> <b>Sucursal:</b> {{ $producto->sucursal_id }}</h5>

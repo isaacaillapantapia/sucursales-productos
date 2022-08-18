@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col-12">
             <br>
-            <h1>Listado de Sucursales Existentes</h1>
+            <h1>Sucursales Creadas</h1>
             <br>
         </div>
         <hr>
@@ -29,7 +29,7 @@
                 <div class="card-body">
                     <h5 class="card-title"><b>Nombre:</b> {{ $sucursal->name }}</h5>
                     <h5 class="card-title"><b>Cantidad de Productos:</b> {{ $sucursal->name_sucursal }}</h5>
-                    <h5 class="card-title"><b>Descripcion:</b> {{ Str::limit($sucursal->desc,15) }}</h5>
+                    <h5 class="card-title"><b>Descripcion:</b> {{ Str::limit($sucursal->desc,50) }}</h5>
                     <p class="card-text text-muted">{{ \FormatTime::LongTimeFilterCreated($sucursal->created_at)}}</p>
                     <p class="card-text text-muted">{{ \FormatTime::LongTimeFilter($sucursal->updated_at)}}</p>
                 </div>
@@ -47,7 +47,7 @@
 @stop
 @section('footer')
 <br>
-<a href="/sucursales/create" type="button" class="btn btn-secondary"> Agregar Sucursal</a>
+<a href="/sucursales/create" type="button" class="btn btn-secondary"> Crear Sucursal</a>
 <br>
 
 </div>

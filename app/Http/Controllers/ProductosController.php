@@ -20,8 +20,7 @@ class ProductosController extends Controller
         ]);
 
     }
-    public function create($id){
-        $productos= producto::where('sucursal_id', $id)->get();
+    public function create(){
         return view('productos.agregar');
     }
 
@@ -84,7 +83,7 @@ class ProductosController extends Controller
         //dd($productos);
 
         return view('productos.listado',[
-            'productos' => $productos
+            'productos' => $producto
         ]);
 
     }

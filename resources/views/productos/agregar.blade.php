@@ -17,7 +17,7 @@
 <div class="row">
         <div class="col-12">
 
-            <form action="{{ url('/productos/{id}')}}" method="POST">
+            <form action="{{ url('/productos')}}" method="POST">
                 @csrf
                 <div class="mb-3">
                     <label for="name" class="form-label">Nombe producto</label>
